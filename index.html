@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Logo</h1>
+      </div>
+      <div class="menu" onclick="navToggle()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Order</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Concat</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="home">
+        <div class="content">
+            <h2>nice juice nice life</h2>
+            <p>
+              cool your mind with our juices
+            </p>
+        <div class="buttons">
+            <a href="#"><button><i class="fas fa-shopping-cart"></i>  order</button></a>
+            <a href="#"><button>  add to cart</button></a>
+        </div>
+
+        <div class="playBtn" onclick="showVideo()"><i class="fas fa-play-circle"></i> watch video</div>
+        </div>
+
+        <div class="image">
+            <img src="refreshing-animate.svg" alt="">
+        </div>
+    </div>
+
+    <div class="videoContainer">
+        <i class="fas fa-times" onclick="closeBtn()"></i>
+        <video src="SLOW MOTION LEMON DROM __ IN 4K.mp4" controls></video>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s linear;
+  font-family: "Work Sans", sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header .logo h1 {
+  font-size: 4rem;
+  color: #ffc101;
+  font-family: "Kaushan Script", cursive;
+}
+header .logo h1:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+header .menu {
+  display: none;
+  font-size: 4.5rem;
+  cursor: pointer;
+  z-index: 1000000;
+  color: #ffc101;
+}
+header ul {
+  width: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  padding: 1rem;
+}
+header ul li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+header ul li a:hover {
+  color: #ffc101;
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home .content {
+  padding: 4.8rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.home .content h2 {
+  color: #455a64;
+  font-size: 5rem;
+  margin: 2rem 0;
+  font-family: "Kaushan Script", cursive;
+}
+.home .content p {
+  font-size: 3.5rem;
+  color: #ffc101;
+  font-family: "Kaushan Script", cursive;
+}
+.home .content .buttons {
+  margin: 4rem 0;
+}
+.home .content .buttons a button {
+  height: 4rem;
+  width: 16rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5rem;
+  color: #fff;
+  cursor: pointer;
+}
+.home .content .buttons a button:hover {
+  opacity: 0.7;
+}
+.home .content .buttons a:nth-child(1) button {
+  background-color: #ffc101;
+}
+.home .content .buttons a:nth-child(2) button {
+  background-color: #455a64;
+  margin-left: 2rem;
+}
+.home .content .playBtn {
+  font-size: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.home .content .playBtn i {
+  color: #ffc101;
+}
+.home .image img {
+  background-color: #455a64;
+  width: 50vw;
+}
+
+.videoContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  visibility: hidden;
+}
+.videoContainer video {
+  background-color: #000;
+  width: 50vw;
+  height: 60vh;
+}
+.videoContainer i {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 2rem;
+  font-size: 5rem;
+  color: rgba(69, 90, 100, 0.7);
+  cursor: pointer;
+}
+
+.playToggle {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+  header .menu {
+    display: block;
+    margin: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  header nav {
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -200%;
+  }
+  header nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul li {
+    padding: 5.5rem;
+  }
+  header nav ul li a {
+    font-size: 4rem;
+  }
+  .videoContainer video {
+    width: 70vw;
+    height: 45vh;
+  }
+  .toggle {
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .home .content {
+    width: 100%;
+    text-align: center;
+  }
+  .home .image {
+    display: none;
+  }
+  .videoContainer video {
+    width: 70vw;
+    height: 40vh;
+  }
+} /*# sourceMappingURL=style.css.map */
